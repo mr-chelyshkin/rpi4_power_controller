@@ -4,6 +4,7 @@
 #
 
 .idea
+release.sh
 
 # Binaries for programs and plugins
 *.exe
