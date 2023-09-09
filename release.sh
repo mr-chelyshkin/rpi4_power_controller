@@ -30,7 +30,7 @@ if [ -z "${UPLOAD_URL}" ] || [ "${UPLOAD_URL}" == "null" ]; then
   exit 1
 fi
 
-# 2. Upload a file to the release
+# Upload a file to the release
 curl -H "Authorization: token $TOKEN" \
   -H "Content-Type: $(file -b --mime-type ${FILE_PATH})" \
   -X POST "${UPLOAD_URL}?name=$(basename ${FILE_PATH})" \
